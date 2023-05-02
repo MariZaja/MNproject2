@@ -1,6 +1,6 @@
 from math import sin
 
-def createAmatrix(N, a1, a2, a3):
+def create_A_matrix(N, a1, a2, a3):
     A = []
     for i in range(N):
         if i == 0:
@@ -34,6 +34,6 @@ def createAmatrix(N, a1, a2, a3):
         A.append(a)
     return A
 
-def createBvector(N):
+def create_b_vector(N):
     b = [sin(n * (8 + 1)) for n in range(N)]
     return b
